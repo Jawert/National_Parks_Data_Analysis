@@ -1,4 +1,4 @@
-# National_Parks_Data_Analysis
+# National Parks Data Analysis
 
 ## Description
 ## Installation Instructions
