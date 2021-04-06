@@ -60,6 +60,7 @@ def cleanit():
             correct_count +=1
         else:
             print('lat/lon disagreement for ' + row['name'])
+    print('The number of rows in the dataframe is: ' + str(len(parks_data.index)))
     print('If this number matches the number of trails in the file, lat/lon split correctly: ' + str(correct_count))
 
     should_continue=input('If lat/lon appears to have split correctly, enter "y" to continue. Otherwise enter any key to abort: ')
@@ -71,7 +72,7 @@ def cleanit():
 
 
         #split off features and activities into lists of unique values
-        print('Creating lists for unique features and activities...')
+        print('\nCreating lists for unique features and activities...')
         unique_features=[]
         unique_activities=[]
 
@@ -140,7 +141,7 @@ def cleanit():
         #writing parks_data with separate lat/lon to a new csv to preserve original dataset
         parks_data.to_csv('national_park_trails_rev2.csv', index = False)
         new_csv_path=os.path.join(working_dir,'national_park_trails_rev2.csv')
-        print('Wrote new CSV with updated latitude and longitude: ' + str(new_csv_path))
+        print('Wrote new CSV with updated latitude and longitude: ' + str(new_csv_path) + '\n')
 
 
         #importing the new sheet to double check
