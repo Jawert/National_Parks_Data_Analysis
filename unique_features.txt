@@ -1,1 +1,0 @@
-['dogs-no', 'forest', 'river', 'views', 'waterfall', 'wild-flowers', 'wildlife', 'partially-paved', 'lake', 'kids', 'historic-site', 'dogs-leash', 'ada', 'beach', 'cave', 'paved', 'strollers', 'hot-springs', 'city-walk', 'rails-trails', 'dogs']
