@@ -12,6 +12,9 @@ def cleanit():
     import pandas as pd
     import ast
     import os
+    import time
+    
+    start = time.time()
 
     #load the dataset in to a dataframe
     parks_data=pd.read_csv('national_park_trails.csv')
@@ -148,6 +151,10 @@ def cleanit():
         print('A sample of your cleaned up data: ')
         parks_data_rev2=pd.read_csv('national_park_trails_rev2.csv')
         print(parks_data_rev2.head(5))
+        
+        now = time.time()
+        
+        print(f'\n\n\nIt has been {now - start} seconds since this program began')
 
     else:
         print('Aborted data cleanup script.')
