@@ -162,7 +162,7 @@ def cleanit():
         end_time = time.time()
         
         print('Complete!')
-        print(f'This script ran in {end_time - start_time} seconds.')
+        print(f'This script ran in {end_time - start_time:.2f} seconds.')
     else:
         print('Aborted data cleanup script.')
         sys.exit(0)
